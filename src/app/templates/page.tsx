@@ -9,9 +9,9 @@ import { BreadcrumbJsonLd, ItemListJsonLd } from "@/components/seo";
 export const metadata = createMetadata({
   title: "Templates",
   description:
-    "Six complete starter sites built from the AgeZero UI kit: SaaS landing, Directory, Ad landing, Lead magnet, Portfolio, AI Tools Directory. Fork and ship.",
+    "Ten complete starter sites built from the AgeZero UI kit: SaaS landing, Directory, Ad landing, Lead magnet, Portfolio, AI Tools Directory, Agency, Ecommerce, Startup, Job board. Fork and ship.",
   path: "/templates",
-  keywords: ["saas template", "landing page template", "next.js template", "directory template"],
+  keywords: ["saas template", "landing page template", "next.js template", "directory template", "ecommerce template", "startup template", "agency template", "careers template"],
 });
 
 const templates = [
@@ -70,6 +70,46 @@ const templates = [
     sections: ["Tools", "Categories", "Tags", "Compare", "Blog", "RSS", "SEO"],
     preview: "/templates/ai-tools-directory",
   },
+  {
+    slug: "agency",
+    title: "Agency & consultancy",
+    subject: "Northwind — design & engineering studio",
+    description:
+      "Studio landing: hero with team grid, services, case studies, process timeline, values, contact form.",
+    accent: "from-rose-500/20 to-orange-500/10",
+    sections: ["Hero", "Services", "Case studies", "Team grid", "Process", "Testimonials", "FAQ", "Contact"],
+    preview: "/templates/agency",
+  },
+  {
+    slug: "ecommerce",
+    title: "Ecommerce product",
+    subject: "Halcyon Goods — premium home essentials",
+    description:
+      "Product landing with sticky cart drawer, category filter, product grid, featured gallery modal, reviews, FAQ, footer.",
+    accent: "from-violet-500/20 to-fuchsia-500/10",
+    sections: ["Top nav", "Hero", "Categories", "Product grid", "Gallery", "Cart drawer", "Testimonials", "FAQ"],
+    preview: "/templates/ecommerce",
+  },
+  {
+    slug: "startup",
+    title: "Startup launch (YC-style)",
+    subject: "Northwind — the project OS for AI teams",
+    description:
+      "YC-style launch: punchy hero with mockup, backers strip, bento features, tweet marquee, testimonials, waitlist signup, FAQ.",
+    accent: "from-emerald-500/20 to-cyan-500/10",
+    sections: ["Hero", "Backers", "Bento features", "Tweet marquee", "Waitlist", "FAQ"],
+    preview: "/templates/startup",
+  },
+  {
+    slug: "job-board",
+    title: "Careers / job board",
+    subject: "Northwind — careers page",
+    description:
+      "Hiring page: values, perks grid, role list with filters, featured role detail, 5-step hiring process, application form, FAQ.",
+    accent: "from-amber-500/20 to-orange-500/10",
+    sections: ["Hero", "Values", "Perks", "Open roles", "Hiring process", "Apply form", "FAQ"],
+    preview: "/templates/job-board",
+  },
 ];
 
 export default function TemplatesPage() {
@@ -91,7 +131,7 @@ export default function TemplatesPage() {
           Templates
         </Badge>
         <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl">
-          Six starter sites,
+          Ten starter sites,
           <br />
           <span className="text-primary">ready to fork.</span>
         </h1>
